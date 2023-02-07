@@ -1,0 +1,24 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: #F4D03F; */
+    margin: 0;
+    padding: 0;
+
+}
+h1{
+    color: rgb(237, 238, 255);
+    margin-top: 3rem;
+}
+.caja1{
+    padding: 2em;
+    text-align: center;
+    height: 100vh;
+    width: auto;
+    background-image: linear-gradient(132deg, #3b5529 0%, #219c46 100%);
+background-repeat: no-repeat;
+}
+a{
+    margin-top: 4rem;
+    text-decoration: none;
+    color: rgb(237, 238, 255);
+}
