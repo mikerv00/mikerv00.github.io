@@ -10,8 +10,10 @@
 .res {
     float: right;
 }
+
 div{
     display: inline-block;
+	
 }
 
 .ticket h1 {
@@ -38,4 +40,9 @@ div{
 	display: inline-block;
 	text-align: right;
 	width: 150px;
+}
+.datos{
+	align-items: center;
+	width: 300px;
+	
 }
