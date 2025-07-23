@@ -1,0 +1,462 @@
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/montserrat/Montserrat-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Anton';
+    src: url('fonts/Anton/Anton-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a:hover{
+    color: #f4c167;
+    text-decoration: none;
+}
+
+body {
+    background-color: #1e1e1e;
+    color: #f4c167;
+}
+
+.header-hero {
+    position: relative;
+    height: 100vh;
+    background: url('img/background.webp') no-repeat center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.header-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(36, 36, 36, 0.89);
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 20px; */
+    background: rgba(16, 16, 16, 0.59);
+    position: relative;
+    z-index: 10;
+}
+
+.logo img {
+    width: 6rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero {
+    text-align: center;
+    font-size: 96px;
+    font-weight: bold;
+    position: relative;
+    z-index: 10;
+    margin: 15rem 50px;
+    font-family: 'Anton', sans-serif;
+    transform: scale(1.9);
+}
+
+.ubicacion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    background-color: #f4c167;
+    color: black;
+}
+
+.mapa{
+    padding: 5rem;
+}
+
+.mapa, .imagen-gym {
+    flex: 1 1 45%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+.imagen-gym{
+    background: url('img/gymimagen.webp') no-repeat center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 7rem;
+    width: 10vh;
+}
+
+.imagen-gym img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.imagen-gym::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #EF841A;
+    opacity: 0.31;
+    z-index: 0;
+}
+
+.beneficios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #1e1e1e;
+    padding: 40px 20px;
+}
+
+.beneficio {
+    text-align: center;
+    
+    margin: 20px;
+}
+
+.beneficio img {
+    width: 18rem;
+    height: 18rem;
+    object-fit: cover;
+}
+
+.beneficio p {
+    margin-top: 1rem;
+    font-size: 16px;
+}
+
+.contacto {
+    text-align: center;
+    padding: 40px;
+    background-color: #f4c167;
+}
+
+form input, form textarea {
+    width: 80%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: black;
+    color: #f4c167;
+    cursor: pointer;
+}
+
+footer {
+    padding: 2rem;
+    height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: black;
+    color: #f4c167;
+    padding: 20px;
+}
+
+footer p, a {
+    margin-top: 2rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    margin-top: 2rem;
+    color: #f4c167;
+    text-decoration: none;
+}
+
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-md-4 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.col-md-6 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.form-group input{
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border-radius: 30px;
+}
+
+.form-group textarea{
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border-radius: 30px;
+}
+
+.contact-form {
+    background-color: #f4c167;
+    padding: 40px;
+    color: black;
+}
+
+.contact-form .container {
+    max-width: 960px;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.contact-form button {
+    background-color: black;
+    color: #f4c167;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-info {
+    text-align: left;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+}
+
+
+.nosotros-section{
+    color: #ffffff;
+}
+
+
+.seccion-ofrecemos{
+    color: #111111;
+    position: relative;
+    height: 70vh;
+    background: url('img/background.webp') no-repeat center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #FFB53F;
+    opacity: 0.88;
+}
+
+.seccion-ofrecemos:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFB53F;
+    opacity: 0.88;
+    z-index: 0;
+}
+
+.nosotros-content {
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    z-index: 10;
+    padding: 45px 20px;
+    margin: 15rem 50px;
+    font-family: 'Anton', sans-serif;
+}
+
+.nosotros-content li{
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
+
+    @media (max-width: 768px) {
+        .hero {
+            font-size: 36px;
+            margin: 5rem 20px;
+            transform: scale(1);
+        }
+    
+        header {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    
+        nav ul {
+            flex-direction: column;
+            padding: 10px 0;
+        }
+    
+        nav ul li {
+            margin: 5px 0;
+        }
+    
+        .ubicacion {
+            flex-direction: column;
+            text-align: center;
+            padding: 20px;
+        }
+    
+        .mapa, .imagen-gym {
+            flex: 1 1 100%;
+            padding: 10px;
+            margin-left: 0;
+        }
+    
+        .mapa iframe {
+            height: 250px;
+        }
+    
+        .imagen-gym {
+            width: 100%;
+            height: 250px;
+        }
+    
+        .beneficios {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .beneficio {
+            width: 100%;
+            max-width: 280px;
+        }
+    
+        .beneficio img {
+            width: 100%;
+            height: auto;
+        }
+    
+        .contact-form {
+            padding: 20px;
+        }
+    
+        .contact-form form input, .contact-form form textarea {
+            width: 100%;
+            font-size: 14px;
+        }
+    
+        footer {
+            flex-direction: column;
+            text-align: center;
+            height: auto;
+            padding: 30px 10px;
+        }
+    
+        footer .acerca, footer .info-contacto, footer .redes-sociales {
+            margin-bottom: 20px;
+        }
+    
+        footer img {
+            width: 25px;
+            height: 25px;
+        }
+    }
+    
